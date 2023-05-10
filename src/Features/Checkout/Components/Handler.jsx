@@ -14,10 +14,10 @@ function Label({ title }) {
 function TbRow({
     label,
     children,
-    key,
+    keys,   // bug fixed
 }) {
     return (
-        <tr className="border-b text-base text-pColor" key={key}>
+        <tr className="border-b text-base text-pColor" key={keys}>
             <td className="pt-5 pb-2">
                 <p className="capitalize font-normal">{label}</p>
             </td>
